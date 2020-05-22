@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <title>tic tac toe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIGITAL TIMER</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
-  <div class="board" id="board">
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-  </div>
-  <div class="winning-message">
-    <div data-winning-message-text></div>
-    <button id="restart-button">Restart</button>
-  </div>
+  <div class="container">
+     <div id="display">00:00:00:00</div>
+        <div class="buttons">
+            <button id="startStop" onclick="startStop()">START</button> <button id="reset" onclick="reset()">RESET</button>
+        </div>
+    </div>
 </body>
 </html>
