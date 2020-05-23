@@ -17,11 +17,11 @@ function stopWatch(){
 
     miliseconds++;
      if(miliseconds / 100 === 1){
-       miliseconds = 0;
-       seconds++;
-         if(seconds / 60 === 1){
-            seconds = 0;
-            minutes++;
+        miliseconds = 0;
+        seconds++;
+          if(seconds / 60 === 1){
+             seconds = 0;
+             minutes++;
  
             if(minutes / 60 === 1){
                minutes = 0;
@@ -30,7 +30,6 @@ function stopWatch(){
         }
      }
 
-    //If seconds/minutes/hours are only one digit, add a leading 0 to the value
     if(miliseconds < 100 && miliseconds >= 10) {
       displayMiliSeconds = "" + miliseconds.toString();
   }
@@ -62,7 +61,7 @@ function stopWatch(){
         displayHours = hours;
     }
 
-    //Display updated time values to user
+  
     document.getElementById("display").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds + ":" + displayMiliSeconds;
 
 }
@@ -73,7 +72,6 @@ function startStop(){
 
     if(status === "stopped"){
 
-        //Start the stopwatch (by calling the setInterval() function)
         interval = window.setInterval(stopWatch, 10);
         document.getElementById("startStop").innerHTML = "Stop";
         status = "started";
@@ -89,7 +87,6 @@ function startStop(){
 
 }
 
-//Function to reset the stopwatch
 function reset(){
 
     window.clearInterval(interval);

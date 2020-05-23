@@ -9,13 +9,13 @@ padding-top: 15rem;
 
 #display{
   width: 100%;
-  font-size: 150px;
+  font-size: 80px;
   text-align: center;
   margin: 0px auto;
   color: rgb(0, 0, 0);
 }
 
-.buttons{
+.btn{
   text-align: center;
 
 }
